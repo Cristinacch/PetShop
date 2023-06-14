@@ -1,5 +1,5 @@
 ## Belovet-Pet: 
-### Github Pages:
+### Github Pages:https://github.com/Cristinacch/PetShop.git
 
 
-### Netlify: 
+### Netlify: petshopbelovet.netlify.app
