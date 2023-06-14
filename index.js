@@ -152,7 +152,7 @@ function restarCantidad(event){
 //Elimino el item seleccionado del carrito
 function eliminarItemCarrito(event){
     var buttonClicked = event.target;
-    buttonClicked.parentElement.parentElement.remove();
+    buttonClicked.parentElement.remove();
     //Actualizamos el total del carrito
     actualizarTotalCarrito();
 
