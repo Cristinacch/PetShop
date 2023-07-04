@@ -43,7 +43,11 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    Swal.fire(
+        'Compra Realizada con Exito!',
+        'Gracias por su Compra!',
+        )
+    //alert("Gracias por la compra");
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -87,7 +91,8 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     var nombresItemsCarrito = itemsCarrito.getElementsByClassName('carrito-item-titulo');
     for(var i=0;i < nombresItemsCarrito.length;i++){
         if(nombresItemsCarrito[i].innerText==titulo){
-            alert("El item ya se encuentra en el carrito");
+            Swal.fire('El producto ya se encuentra en el carrito');
+            //alert("El producto ya se encuentra en el carrito");
             return;
         }
     }
@@ -113,7 +118,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     itemsCarrito.append(item);
 
     //Agregamos la funcionalidad eliminar al nuevo item
-     item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);
+    item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);
 
     //Agregmos al funcionalidad restar cantidad del nuevo item
     var botonRestarCantidad = item.getElementsByClassName('restar-cantidad')[0];
@@ -195,7 +200,5 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
-
-
 
 
