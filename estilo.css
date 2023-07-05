@@ -26,9 +26,66 @@ header h1 {
     padding: 30px 0;
 }
 
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilos para los selectores de moneda */
+.moneda select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de cambio */
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(45 139 27 / 59%);
+    color: white;
+    border:lightgreen;
+    right: 15px;
+    top: 15px;
+
+}
+
+
+/* Estilos para el contenedor de la tasa de cambio */
+.taza-cambio-container {
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor de la tasa de cambio */
+.cambio {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de submit */
+button[type="submit"] {
+    padding: 20px 30px;
+    background-color: #0bf013;
+    color: white;
+    border:#04f725;
+    cursor: pointer;
+}   
+/* Estilos para el párrafo con el cambio actual */
+#CambioActual {
+    font-style: italic;
+    margin-top: 20px;
+    color: whitesmoke;
+}
 .contenedor {
     max-width: 1200px;
-    padding: 10px;
+    padding: 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
